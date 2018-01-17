@@ -36,6 +36,15 @@
   color: var(--color-blue);
 }
 
+.columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  max-width: 47%;
+}
+
 @media (max-width: 1023px) {
   .section_description {
     width: calc(100% - 4rem);
@@ -66,6 +75,16 @@
     margin: 0 auto;
     column-count: 1;
     color: var(--color-blue);
+  }
+
+  .columns {
+    margin-left: 16px;
+    margin-right: 16px;
+    display: block;
+  }
+
+  .column {
+    max-width: 100%;
   }
 }
 
