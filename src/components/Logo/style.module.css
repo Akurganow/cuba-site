@@ -29,8 +29,8 @@
   border-color: var(--color-red);
   background-color: var(--color-white);
   display: block;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   padding: 8px;
 
   & svg {

@@ -25,8 +25,11 @@ class IndexPage extends Component {
           locale={locale}
           pictures={slider} />
         <Actions {...this.props} />
-        <h2 className={st.heading}>{t({ ru: 'О Кубе', en: 'About Cuba' })}</h2>
-        <p style={{width: '100%', textAlign: 'center'}}>
+        <h2
+          className={st.heading}>
+          {t({ ru: 'О Кубе', en: 'About Cuba' })}
+        </h2>
+        <p style={{ width: '100%', textAlign: 'center' }}>
           {t({
             ru: 'CUBA BAR – это остров кубинского праздника в центре Петербурга.',
             en: 'CUBA BAR – is an island of the Cuban holiday in the center of St. Petersburg',
@@ -66,12 +69,29 @@ class IndexPage extends Component {
             </p>
           </div>
         </div>
+        <div style={{ textAlign: 'center' }}>
+          <h3>
+            {t({
+              ru: 'У нас есть всё, что нужно для приятного отдыха:',
+              en: 'У нас есть всё, что нужно для приятного отдыха:',
+            })}
+          </h3>
+          <p>
+            {t({
+              ru: 'напитки на любой вкус, сочные бургеры и стейки, кальяны и настольные игры.',
+              en: 'напитки на любой вкус, сочные бургеры и стейки, кальяны и настольные игры.',
+            })}
+          </p>
+        </div>
+        <div>Коллаж</div>
         <section className={st.section}>
           <h2 className={st.heading}>{t({ ru: 'Зажигательные Вечеринки', en: 'The Hottest Parties' })}</h2>
           <p className={st.section_description}>
             {t({
-              ru: 'Каждую пятницу и субботу приглашаем насладиться живой кубинской музыкой и страстными национальными танцами!',
-              en: 'Каждую пятницу и субботу приглашаем насладиться живой кубинской музыкой и страстными национальными танцами!',
+              ru:
+                'Каждую пятницу и субботу приглашаем насладиться живой кубинской музыкой и страстными национальными танцами!',
+              en:
+                'Каждую пятницу и субботу приглашаем насладиться живой кубинской музыкой и страстными национальными танцами!',
             })}
           </p>
           <PhotoCollage
