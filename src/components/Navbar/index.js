@@ -3,6 +3,40 @@ import Link from 'gatsby-link'
 import cn from 'classnames'
 import st from './style.module.css'
 import Locale from '../Locale'
+import { Dropdown } from './components/Dropdown'
+
+const dropdownItemRenderer = ({ to, title }) => (
+  <Link
+    activeClassName={st.active}
+    className={st.link}
+    to={to}>
+    {title}
+  </Link>
+)
+
+const Item = ({ title, to, items }) => {
+  if (to && !items) {
+    return (
+      <li className={st.item}>
+        <Link
+          activeClassName={st.active}
+          className={st.link}
+          to={to}>
+          {title}
+        </Link>
+      </li>
+    )
+  } else {
+    return (
+      <li className={st.item}>
+        <Dropdown
+          title={title}
+          items={items}
+          renderer={dropdownItemRenderer} />
+      </li>
+    )
+  }
+}
 
 const Navbar = props => {
   const t = props.actions.translate
@@ -12,8 +46,17 @@ const Navbar = props => {
       title: t({ ru: 'События', en: 'Events' }),
     },
     {
-      to: '/menu',
       title: t({ ru: 'Меню', en: 'Menu' }),
+      items: [
+        {
+          to: '/kitchen',
+          title: t({ ru: 'Кухня', en: 'Kitchen' }),
+        },
+        {
+          to: '/bar',
+          title: t({ ru: 'Бар', en: 'Bar' }),
+        },
+      ],
     },
   ]
   const linksLast = [
@@ -25,35 +68,14 @@ const Navbar = props => {
 
   return (
     <ul className={cn(st.navbar, props.className)}>
-      <div className={st.first}>
-        {linksFirst.map(link => (
-          <li
-            key={link.to}
-            className={st.item}>
-            <Link
-              activeClassName={st.active}
-              className={st.link}
-              to={link.to}>
-              {link.title}
-            </Link>
-          </li>
-        ))}
-      </div>
-      <div className={st.center}>
-      </div>
+      <div className={st.first}>{linksFirst.map(link => <Item
+        key={link.title}
+        {...link} />)}</div>
+      <div className={st.center} />
       <div className={st.last}>
-        {linksLast.map(link => (
-          <li
-            key={link.to}
-            className={st.item}>
-            <Link
-              activeClassName={st.active}
-              className={st.link}
-              to={link.to}>
-              {link.title}
-            </Link>
-          </li>
-        ))}
+        {linksLast.map(link => <Item
+          key={link.title}
+          {...link} />)}
         <li className={st.item}>
           <Locale {...props} />
         </li>

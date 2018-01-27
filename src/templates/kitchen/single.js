@@ -7,7 +7,7 @@ import SinglePost from '../../components/SinglePost'
 import Content from './components/Content'
 import Presentation from './components/Presentation'
 
-class GalleryPost extends Component {
+class MenuPost extends Component {
   t = this.props.actions.translate
 
   renderContent = (item) =>
@@ -35,4 +35,4 @@ class GalleryPost extends Component {
   }
 }
 
-export default connectComponent(GalleryPost)
+export default connectComponent(MenuPost)

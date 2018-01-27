@@ -20,7 +20,26 @@ query {
       }
     }
   }
-  menu: allContentfulMenu {
+  kitchen: allContentfulMenu(filter: {type: {eq: "kitchen"}}) {
+    edges {
+      node {
+        node_locale
+        id
+        title
+        description {
+          description
+        }
+        price
+        image {
+          file {
+            url
+            contentType
+          }
+        }
+      }
+    }
+  }
+  bar: allContentfulMenu(filter: {type: {eq: "bar"}}) {
     edges {
       node {
         node_locale

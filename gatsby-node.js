@@ -8,8 +8,10 @@ const combineNodes = require('./helpers/combineNodes')
 const indexPage = path.resolve(process.cwd(), 'src/templates/index.js')
 const eventsPage = path.resolve(process.cwd(), 'src/templates/events/index.js')
 const eventsPost = path.resolve(process.cwd(), 'src/templates/events/single.js')
-const menuPage = path.resolve(process.cwd(), 'src/templates/menu/index.js')
-const menuPost = path.resolve(process.cwd(), 'src/templates/menu/single.js')
+const kitchenPage = path.resolve(process.cwd(), 'src/templates/kitchen/index.js')
+const kitchenPost = path.resolve(process.cwd(), 'src/templates/kitchen/single.js')
+const barPage = path.resolve(process.cwd(), 'src/templates/bar/index.js')
+const barPost = path.resolve(process.cwd(), 'src/templates/bar/single.js')
 // const galleryPage = path.resolve(process.cwd(), 'src/templates/gallery/index.js')
 // const galleryPost = path.resolve(process.cwd(), 'src/templates/gallery/single.js')
 
@@ -51,10 +53,11 @@ exports.createPages = async ({ graphql, boundActionCreators }) => {
     })
   }
 
-  let { events, menu, gallery, slider } = result.data
+  let { events, kitchen, bar, slider } = result.data
 
   events = combineNodes(events.edges).map(createPost.bind(null, true))
-  menu = combineNodes(menu.edges).map(createPost.bind(null, false))
+  kitchen = combineNodes(kitchen.edges).map(createPost.bind(null, false))
+  bar = combineNodes(bar.edges).map(createPost.bind(null, false))
   // gallery = combineNodes(gallery.edges).map(createPost)
   slider = combineNodes(slider.edges)
 
@@ -64,7 +67,8 @@ exports.createPages = async ({ graphql, boundActionCreators }) => {
 
   const indexData = {
     events: events.filter(filterIndexItem).slice(0, 8),
-    menu: menu.filter(filterIndexItem).slice(0, 8),
+    kitchen: kitchen.filter(filterIndexItem).slice(0, 4),
+    bar: bar.filter(filterIndexItem).slice(0, 4),
     slider: slider,
   }
 
@@ -81,10 +85,16 @@ exports.createPages = async ({ graphql, boundActionCreators }) => {
     items: events,
   })
   createPages({
-    rootPath: '/menu',
-    pageTemplate: menuPage,
-    postTemplate: menuPost,
-    items: menu,
+    rootPath: '/kitchen',
+    pageTemplate: kitchenPage,
+    postTemplate: kitchenPost,
+    items: kitchen,
+  })
+  createPages({
+    rootPath: '/bar',
+    pageTemplate: barPage,
+    postTemplate: barPost,
+    items: bar,
   })
   // createPages({
   //   rootPath: '/gallery',

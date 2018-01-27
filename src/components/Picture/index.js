@@ -114,9 +114,7 @@ class Picture extends Component {
   }
 
   componentDidMount() {
-    setTimeout(() => {
-      this.loadFullSize()
-    }, 0);
+    this.loadFullSize()
   }
 
   loadFullSize = () => {

@@ -41,6 +41,10 @@
   font-weight: bold;
 }
 
+.price {
+  display: block;
+}
+
 :global(.firstline) .image_container {
   height: calc(((1280px / 2) - 16px) / 16 * 9);
 }

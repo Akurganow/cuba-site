@@ -13,9 +13,10 @@ const leftPad = require('left-pad')
 
 class IndexPage extends Component {
   render() {
-    const { data: { events, menu, gallery, slider } } = this.props.pathContext
+    const { data: { events, kitchen, bar, slider } } = this.props.pathContext
     const locale = this.props.locale
     const t = this.props.actions.translate
+    const menu = [...kitchen, ...bar]
 
     return (
       <PageLayout

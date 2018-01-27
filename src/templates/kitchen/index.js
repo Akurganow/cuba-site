@@ -6,7 +6,7 @@ import PageLayout from '../../components/PageLayout'
 import PageGrid from '../../components/PageGrid'
 import Tile from './components/Tile'
 
-class GalleryPage extends Component {
+class MenuPage extends Component {
   itemRenderer = (node) => <Tile
     {...node}
     t={this.props.actions.translate}
@@ -27,4 +27,4 @@ class GalleryPage extends Component {
   }
 }
 
-export default connectComponent(GalleryPage)
+export default connectComponent(MenuPage)
