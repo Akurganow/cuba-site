@@ -53,8 +53,8 @@
       "path---kitchen-shrimp-b8ad72f937e0e1aaec2d.js.map"
     ],
     "component---src-templates-index-js": [
-      "component---src-templates-index-js-fc29e224d709bab00902.js",
-      "component---src-templates-index-js-fc29e224d709bab00902.js.map"
+      "component---src-templates-index-js-63ce72926621d0d2e303.js",
+      "component---src-templates-index-js-63ce72926621d0d2e303.js.map"
     ],
     "path---kitchen-burger": [
       "path---kitchen-burger-5dec6c64642af7235e8d.js",
@@ -93,8 +93,8 @@
       "component---src-templates-events-single-js-6a90283a84a7746f0115.js.map"
     ],
     "component---src-pages-contacts-js": [
-      "component---src-pages-contacts-js-ce3369599d9321032969.js",
-      "component---src-pages-contacts-js-ce3369599d9321032969.js.map"
+      "component---src-pages-contacts-js-0d59c317443f9c95c2a8.js",
+      "component---src-pages-contacts-js-0d59c317443f9c95c2a8.js.map"
     ],
     "path---kitchen-pumpkin-soup": [
       "path---kitchen-pumpkin-soup-3f23ecda01568ea4f42b.js",
@@ -137,9 +137,9 @@
       "path---events-18-02-13-wednesdays-dancing-e85ce0c0d4439953d56f.js.map"
     ],
     "commons": [
-      "commons-a471cded6fd81715ffc8.js",
+      "commons-a6e7e4321be60cc5a303.js",
       "build-js-styles.css",
-      "commons-a471cded6fd81715ffc8.js.map",
+      "commons-a6e7e4321be60cc5a303.js.map",
       "build-js-styles.css.map"
     ],
     "path---404-html": [
