@@ -22,10 +22,17 @@ export class Dropdown extends Component {
 
     return (
       <div
+        tabIndex='0'
         onMouseEnter={this.open}
+        onFocus={this.open}
+        onBlur={this.close}
         onMouseLeave={this.close}
         className={st.dropdown}>
-        <span className={st.title}>{title}</span>
+        <span
+          onClick={this.toggle}
+          className={st.title}>
+          {title}
+        </span>
         <div className={cn(st.items, { [st.opened]: opened })}>
           {this.props.items.map(item => this.props.renderer(item))}
         </div>

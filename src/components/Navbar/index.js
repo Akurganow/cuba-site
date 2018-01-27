@@ -8,6 +8,7 @@ import { Dropdown } from './components/Dropdown'
 const dropdownItemRenderer = ({ to, title }) => (
   <Link
     key={to}
+    tabIndex='0'
     activeClassName={st.active}
     className={st.link}
     to={to}>

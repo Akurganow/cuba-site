@@ -25,11 +25,11 @@ const Item = props => {
     <Picture
       className={st.image}
       sizes={{
-        default: { w: 1190/4, h: 400/2},
-        '(max-width:1279px)': { w: 1189/4, h: 400/2},
-        '(max-width:1023px)': { w: 951/4, h: 313/2},
-        '(max-width:767px)': { w: 735/4, h:242/2},
-        '(max-width:479px)': { w: 447/4, h: 147/2},
+        default: { w: (1190/4).toFixed(0), h: (400/2).toFixed(0)},
+        '(max-width:1279px)': { w: (1189/4).toFixed(0), h: (400/2).toFixed(0)},
+        '(max-width:1023px)': { w: (951/4).toFixed(0), h: (313/2).toFixed(0)},
+        '(max-width:767px)': { w: (735/4).toFixed(0), h:(242/2).toFixed(0)},
+        '(max-width:479px)': { w: (447/4).toFixed(0), h: (147/2).toFixed(0)},
       }}
       file={props} />
   )

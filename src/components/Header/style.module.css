@@ -5,6 +5,7 @@
   font-size: 0.8rem;
   position: relative;
   font-family: var(--font-headings);
+  z-index: 9999999;
 
   &:before {
     content: '';
@@ -109,7 +110,7 @@
     margin-bottom: 0;
 
     &:before {
-      background-position: top calc(50% + 52px) center;
+      background-position: top calc(50% + 42px) center;
       height: calc(100% - 90px);
     }
   }

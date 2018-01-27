@@ -4,6 +4,11 @@
 
 .first_item {
   line-height: 0;
+
+  & img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .image {
@@ -30,5 +35,28 @@
     margin: 0;
     padding: 0;
     display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .first_item {
+    & img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .items {
+    justify-content: space-between;
+    flex-flow: wrap row;
+
+    & picture {
+      width: 50vw;
+    }
+
+    & img {
+      width: 100%;
+      height: auto;
+    }
   }
 }

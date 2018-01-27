@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import cn from 'classnames'
 import Link from 'gatsby-link'
 import { connectComponent } from '../state/connectComponent'
 import CarouselWidget from '../components/CarouselWidget'
@@ -92,14 +93,26 @@ class IndexPage extends Component {
           adapter={galleryItemAdapter} />
         <section className={st.section}>
           <h2 className={st.heading}>{t({ ru: 'Зажигательные Вечеринки', en: 'The Hottest Parties' })}</h2>
+          <h3 className={st.subheading}>
+            {t({
+              ru: 'Каждую пятницу и субботу',
+              en: 'Каждую пятницу и субботу',
+            })}
+            <br />
+            {t({
+              ru: 'с 21:00 до 23:00',
+              en: 'с 21:00 до 23:00',
+            })}
+          </h3>
           <p className={st.section_description}>
             {t({
-              ru:
-                'Каждую пятницу и субботу приглашаем насладиться живой кубинской музыкой и страстными национальными танцами!',
-              en:
-                'Каждую пятницу и субботу приглашаем насладиться живой кубинской музыкой и страстными национальными танцами!',
+              ru: 'приглашаем насладиться живой кубинской музыкой и страстными национальными танцами!',
+              en: 'приглашаем насладиться живой кубинской музыкой и страстными национальными танцами!',
             })}
           </p>
+          <div className={st.action_link}>
+            <Link to="/events">{t({ ru: 'Афиша', en: 'Events' })}</Link>
+          </div>
           <PhotoCollage
             t={t}
             locale={locale}

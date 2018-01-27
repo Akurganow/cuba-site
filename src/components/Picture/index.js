@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import cn from 'classnames'
 import queryString from 'query-string'
 
 const queryMap = {
@@ -103,8 +104,11 @@ class Picture extends Component {
       fit: 'fill',
       ...modifiers,
     }
+    const hh = szs.default.w && szs.default.h
+      ? `&h=${((4 / szs.default.w) * szs.default.h).toFixed(0)}`
+      : ''
 
-    const html = `<img src='${file.url}?w=6&q=80' />`
+    const html = `<img src='${file.url}?w=4${hh}&q=80' />`
 
     this.state = {
       html,
