@@ -32,10 +32,6 @@
   margin: 0;
   transition: all 0.15s;
 
-  & + & {
-    margin-left: 50%;
-  }
-
   &:hover, &:focus {
     color: var(--color-blue-light);
   }
@@ -47,33 +43,10 @@
 
 .first, .last {
   display: flex;
-  width: calc((100% - 118px - 1rem) / 2);
-}
-
-.first {
-  justify-content: flex-start;
-}
-
-.last {
-  justify-content: flex-end;
+  justify-content: space-between;
+  width: calc((100% - 220px - 2rem) / 2);
 }
 
 .center {
-  width: 118px;
-}
-
-@media (max-width: 1023px) {
-  .item {
-    & + & {
-      margin-left: 25%;
-    }
-  }
-}
-
-@media (max-width: 767px) {
-  .item {
-    & + & {
-      margin-left: 25%;
-    }
-  }
+  width: 220px;
 }

@@ -42,8 +42,12 @@ const Navbar = props => {
   const t = props.actions.translate
   const linksFirst = [
     {
+      to: '/',
+      title: t({ ru: 'Главная', en: 'Home' }),
+    },
+    {
       to: '/events',
-      title: t({ ru: 'События', en: 'Events' }),
+      title: t({ ru: 'Афиша', en: 'Events' }),
     },
     {
       title: t({ ru: 'Меню', en: 'Menu' }),
