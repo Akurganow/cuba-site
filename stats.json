@@ -53,8 +53,8 @@
       "path---kitchen-shrimp-b8ad72f937e0e1aaec2d.js.map"
     ],
     "component---src-templates-index-js": [
-      "component---src-templates-index-js-504f3e18f7248756af7c.js",
-      "component---src-templates-index-js-504f3e18f7248756af7c.js.map"
+      "component---src-templates-index-js-fc29e224d709bab00902.js",
+      "component---src-templates-index-js-fc29e224d709bab00902.js.map"
     ],
     "path---kitchen-burger": [
       "path---kitchen-burger-5dec6c64642af7235e8d.js",
@@ -105,8 +105,8 @@
       "path---events-18-04-19-live-music-night-3d5590f25b5a119e7638.js.map"
     ],
     "path---index": [
-      "path---index-3ba1d8cd2b507e7952d8.js",
-      "path---index-3ba1d8cd2b507e7952d8.js.map"
+      "path---index-98f94e05d2573106062a.js",
+      "path---index-98f94e05d2573106062a.js.map"
     ],
     "path---bar": [
       "path---bar-e25e08ff538843555d0f.js",
@@ -137,9 +137,9 @@
       "path---events-18-02-13-wednesdays-dancing-e85ce0c0d4439953d56f.js.map"
     ],
     "commons": [
-      "commons-305f6d8482e8882aee17.js",
+      "commons-a471cded6fd81715ffc8.js",
       "build-js-styles.css",
-      "commons-305f6d8482e8882aee17.js.map",
+      "commons-a471cded6fd81715ffc8.js.map",
       "build-js-styles.css.map"
     ],
     "path---404-html": [
