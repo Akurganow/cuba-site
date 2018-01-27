@@ -73,5 +73,20 @@ query {
       }
     }
   }
+  gallery: allContentfulGallery {
+    edges {
+      node {
+        node_locale
+        id
+        title
+        image {
+          file {
+            url
+            contentType
+          }
+        }
+      }
+    }
+  }
 }
 `

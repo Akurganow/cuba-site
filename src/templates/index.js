@@ -6,14 +6,20 @@ import PageLayout from '../components/PageLayout'
 import Actions from '../components/Actions'
 import { filterLocales } from '../modules/locales'
 import PhotoCollage from '../components/PhotoCollage'
+import Gallery from '../components/Gallery'
 import Poster from '../components/Poster'
 import st from '../pages/style.module.css'
 
 const leftPad = require('left-pad')
 
+const galleryItemAdapter = image => ({
+  url: image.file.url,
+  contentType: image.file.contentType,
+})
+
 class IndexPage extends Component {
   render() {
-    const { data: { events, kitchen, bar, slider } } = this.props.pathContext
+    const { data: { events, kitchen, bar, slider, gallery } } = this.props.pathContext
     const locale = this.props.locale
     const t = this.props.actions.translate
     const menu = [...kitchen, ...bar]
@@ -26,10 +32,7 @@ class IndexPage extends Component {
           locale={locale}
           pictures={slider} />
         <Actions {...this.props} />
-        <h2
-          className={st.heading}>
-          {t({ ru: 'О Кубе', en: 'About Cuba' })}
-        </h2>
+        <h2 className={st.heading}>{t({ ru: 'О Кубе', en: 'About Cuba' })}</h2>
         <p style={{ width: '100%', textAlign: 'center' }}>
           {t({
             ru: 'CUBA BAR – это остров кубинского праздника в центре Петербурга.',
@@ -84,7 +87,9 @@ class IndexPage extends Component {
             })}
           </p>
         </div>
-        <div>Коллаж</div>
+        <Gallery
+          items={gallery.node.image}
+          adapter={galleryItemAdapter} />
         <section className={st.section}>
           <h2 className={st.heading}>{t({ ru: 'Зажигательные Вечеринки', en: 'The Hottest Parties' })}</h2>
           <p className={st.section_description}>

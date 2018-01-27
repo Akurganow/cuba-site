@@ -53,12 +53,12 @@ exports.createPages = async ({ graphql, boundActionCreators }) => {
     })
   }
 
-  let { events, kitchen, bar, slider } = result.data
+  let { events, kitchen, bar, slider, gallery } = result.data
 
   events = combineNodes(events.edges).map(createPost.bind(null, true))
   kitchen = combineNodes(kitchen.edges).map(createPost.bind(null, false))
   bar = combineNodes(bar.edges).map(createPost.bind(null, false))
-  // gallery = combineNodes(gallery.edges).map(createPost)
+  gallery = gallery.edges
   slider = combineNodes(slider.edges)
 
   function filterIndexItem(item) {
@@ -69,7 +69,8 @@ exports.createPages = async ({ graphql, boundActionCreators }) => {
     events: events.filter(filterIndexItem).slice(0, 8),
     kitchen: kitchen.filter(filterIndexItem).slice(0, 4),
     bar: bar.filter(filterIndexItem).slice(0, 4),
-    slider: slider,
+    slider,
+    gallery: gallery.find(item => item.node.title === 'На главную'),
   }
 
   createPage({

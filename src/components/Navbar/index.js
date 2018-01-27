@@ -7,6 +7,7 @@ import { Dropdown } from './components/Dropdown'
 
 const dropdownItemRenderer = ({ to, title }) => (
   <Link
+    key={to}
     activeClassName={st.active}
     className={st.link}
     to={to}>
