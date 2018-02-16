@@ -42,7 +42,7 @@ const Tile = props => {
             file={item.image.file} />
         </div>
       )}
-      {!item.image.file && <div className={st.image_placeholder} />}
+      {(!item.image || !item.image.file) && <div className={st.image_placeholder} />}
       <div className={st.info}>
         <span className={st.time}>
           {t({

@@ -33,7 +33,7 @@ const MenuTile = props => {
     <Link
       to={`/menu/${props.slug}`}
       className={st.tile}>
-      {item.image.file && (
+      {item.image && item.image.file && (
         <div className={st.image_container}>
           <Picture
             className={st.image}
@@ -41,7 +41,7 @@ const MenuTile = props => {
             file={item.image.file} />
         </div>
       )}
-      {!item.image.file && <div className={st.image_placeholder} />}
+      {(!item.image || !item.image.file) && <div className={st.image_placeholder} />}
       <div className={st.info}>
         <span className={st.title}>{item.title}</span>
         <span className={st.price}>{t({ ru: `${item.price} руб.`, en: `${item.price} rub` })}</span>
