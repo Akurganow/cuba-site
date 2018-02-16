@@ -34,7 +34,7 @@ const Tile = props => {
     <Link
       to={`/events/${props.slug}`}
       className={st.tile}>
-      {item.image.file && (
+      {item.image && item.image.file && (
         <div className={st.image_container}>
           <Picture
             className={st.image}
