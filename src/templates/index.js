@@ -127,8 +127,8 @@ class IndexPage extends Component {
                       default: { w: (1190 / 2).toFixed(0), h: 400 },
                       '(max-width:1279px)': { w: (1189 / 2).toFixed(0), h: 400 },
                       '(max-width:1023px)': { w: (951 / 2).toFixed(0), h: 313 },
-                      '(max-width:767px)': { w: (735).toFixed(0), h: 242 * 2 },
-                      '(max-width:479px)': { w: (447).toFixed(0), h: 147 * 2 },
+                      '(max-width:767px)': { w: (735).toFixed(0), h: 484 },
+                      '(max-width:479px)': { w: (447).toFixed(0), h: 294 },
                     }}
                     file={image.file} />
                 </div>
