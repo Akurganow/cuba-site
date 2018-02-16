@@ -9,6 +9,7 @@ import { filterLocales } from '../modules/locales'
 import PhotoCollage from '../components/PhotoCollage'
 import Gallery from '../components/Gallery'
 import Poster from '../components/Poster'
+import Picture from '../components/Picture'
 import st from '../pages/style.module.css'
 
 const leftPad = require('left-pad')
@@ -20,7 +21,7 @@ const galleryItemAdapter = image => ({
 
 class IndexPage extends Component {
   render() {
-    const { data: { events, kitchen, bar, slider, gallery } } = this.props.pathContext
+    const { data: { kitchen, bar, slider, gallery } } = this.props.pathContext
     const locale = this.props.locale
     const t = this.props.actions.translate
     const menu = [...kitchen, ...bar]
@@ -89,7 +90,7 @@ class IndexPage extends Component {
           </p>
         </div>
         <Gallery
-          items={gallery.node.image}
+          items={gallery.find(edge => edge.node.title === 'На главную' && edge.node.node_locale === locale).node.image}
           adapter={galleryItemAdapter} />
         <section className={st.section}>
           <h2 className={st.heading}>{t({ ru: 'Зажигательные Вечеринки', en: 'The Hottest Parties' })}</h2>
@@ -113,11 +114,27 @@ class IndexPage extends Component {
           <div className={st.action_link}>
             <Link to="/events">{t({ ru: 'Афиша', en: 'Events' })}</Link>
           </div>
-          <PhotoCollage
-            t={t}
-            locale={locale}
-            rootPage={'events'}
-            items={events} />
+          <div className={st.index_events}>
+            {gallery.find(edge => edge.node.title === 'Афиша на главной' && edge.node.node_locale === locale).node.image.map(image => {
+              return (
+                <div
+                  key={image.file.url}
+                  className={st.index_event}>
+                  <h3 className={st.index_event_title}>{image.description}</h3>
+                  <Picture
+                    className={st.index_event_image}
+                    sizes={{
+                      default: { w: (1190 / 2).toFixed(0), h: 400 },
+                      '(max-width:1279px)': { w: (1189 / 2).toFixed(0), h: 400 },
+                      '(max-width:1023px)': { w: (951 / 2).toFixed(0), h: 313 },
+                      '(max-width:767px)': { w: (735).toFixed(0), h: 242 * 2 },
+                      '(max-width:479px)': { w: (447).toFixed(0), h: 147 * 2 },
+                    }}
+                    file={image.file} />
+                </div>
+              )
+            })}
+          </div>
         </section>
 
         <section className={st.section}>

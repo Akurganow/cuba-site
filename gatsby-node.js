@@ -66,11 +66,10 @@ exports.createPages = async ({ graphql, boundActionCreators }) => {
   }
 
   const indexData = {
-    events: events.filter(filterIndexItem).slice(0, 8),
     kitchen: kitchen.filter(filterIndexItem).slice(0, 4),
     bar: bar.filter(filterIndexItem).slice(0, 4),
     slider,
-    gallery: gallery.find(item => item.node.title === 'На главную'),
+    gallery: gallery.filter(item => item.node.title === 'На главную' || item.node.title === 'Афиша на главной'),
   }
 
   createPage({

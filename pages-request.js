@@ -80,6 +80,8 @@ query {
         id
         title
         image {
+          node_locale
+          description
           file {
             url
             contentType
