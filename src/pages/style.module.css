@@ -86,7 +86,7 @@
 .index_event_image {
   width: 100%;
   height: auto;
-  max-height: 400;
+  max-height: 400px;
   display: block;
 
   & img {
@@ -108,7 +108,7 @@
   }
 
   .index_event_image {
-    max-height: 313;
+    max-height: 313px;
   }
 }
 
@@ -148,7 +148,7 @@
   }
 
   .index_event_image {
-    max-height: 242;
+    max-height: 242px;
   }
 
   .index_event {
@@ -179,7 +179,7 @@
   }
 
   .index_event_image {
-    max-height: 147;
+    max-height: 147px;
   }
 
   .index_event {
