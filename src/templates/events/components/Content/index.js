@@ -16,7 +16,7 @@ const Content = (props) => {
         })}
       </span>
     </div>
-    <div className={st.description}>{item.description.description}</div>
+    <div className={st.description}>{item.description && item.description.description}</div>
   </div>
 
 }
