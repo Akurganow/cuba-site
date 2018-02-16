@@ -3,7 +3,7 @@ import st from './style.module.css'
 import Picture from '../../../../components/Picture'
 
 const Presentation = ({item}) => {
-  if (item.image.file) {
+  if (item.image && item.image.file) {
     return <Picture
       sizes={{default: {w:640}}}
       file={item.image.file} />
