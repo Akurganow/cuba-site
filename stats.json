@@ -1,5 +1,21 @@
 {
   "assetsByChunkName": {
+    "path---events-17-12-31-new-year": [
+      "path---events-17-12-31-new-year-3c3476c6dbf1c708343d.js",
+      "path---events-17-12-31-new-year-3c3476c6dbf1c708343d.js.map"
+    ],
+    "path---kitchen": [
+      "path---kitchen-d272099ba5376c7e807f.js",
+      "path---kitchen-d272099ba5376c7e807f.js.map"
+    ],
+    "path---events": [
+      "path---events-38f83af2a90856b89381.js",
+      "path---events-38f83af2a90856b89381.js.map"
+    ],
+    "path---kitchen-squid-and-onion-rings": [
+      "path---kitchen-squid-and-onion-rings-900803b8ab34d004fb1a.js",
+      "path---kitchen-squid-and-onion-rings-900803b8ab34d004fb1a.js.map"
+    ],
     "path---contacts": [
       "path---contacts-1db04e5021b40904aca6.js",
       "path---contacts-1db04e5021b40904aca6.js.map"
@@ -8,37 +24,85 @@
       "path----557518bd178906f8d58a.js",
       "path----557518bd178906f8d58a.js.map"
     ],
+    "path---events-18-02-14-st-valentines-day": [
+      "path---events-18-02-14-st-valentines-day-32f1f6646c4809b3be9e.js",
+      "path---events-18-02-14-st-valentines-day-32f1f6646c4809b3be9e.js.map"
+    ],
+    "component---src-templates-events-index-js": [
+      "component---src-templates-events-index-js-56185e91f448a1c4d506.js",
+      "component---src-templates-events-index-js-56185e91f448a1c4d506.js.map"
+    ],
+    "component---src-templates-index-js": [
+      "component---src-templates-index-js-f61483d158ba1111bd31.js",
+      "component---src-templates-index-js-f61483d158ba1111bd31.js.map"
+    ],
+    "path---kitchen-burger": [
+      "path---kitchen-burger-b3e82d86221353895b50.js",
+      "path---kitchen-burger-b3e82d86221353895b50.js.map"
+    ],
     "component---src-layouts-index-js": [
       "component---src-layouts-index-js-c3b95fddbcf73e9b75f0.js",
       "component---src-layouts-index-js-c3b95fddbcf73e9b75f0.js.map"
     ],
+    "component---src-templates-kitchen-single-js": [
+      "component---src-templates-kitchen-single-js-7eef0c96626bafaf8b83.js",
+      "component---src-templates-kitchen-single-js-7eef0c96626bafaf8b83.js.map"
+    ],
+    "component---src-templates-events-single-js": [
+      "component---src-templates-events-single-js-54b4e2fc9fef692f4a49.js",
+      "component---src-templates-events-single-js-54b4e2fc9fef692f4a49.js.map"
+    ],
     "component---src-pages-contacts-js": [
-      "component---src-pages-contacts-js-9c11d766df94c57acf42.js",
-      "component---src-pages-contacts-js-9c11d766df94c57acf42.js.map"
+      "component---src-pages-contacts-js-44e6a940987185b8a62a.js",
+      "component---src-pages-contacts-js-44e6a940987185b8a62a.js.map"
+    ],
+    "path---index": [
+      "path---index-8453e67cf5038525b7d2.js",
+      "path---index-8453e67cf5038525b7d2.js.map"
+    ],
+    "path---bar": [
+      "path---bar-de9b8a72e3047d5bf4ae.js",
+      "path---bar-de9b8a72e3047d5bf4ae.js.map"
+    ],
+    "component---src-templates-kitchen-index-js": [
+      "component---src-templates-kitchen-index-js-ac5f0e05ec8cd269b3e0.js",
+      "component---src-templates-kitchen-index-js-ac5f0e05ec8cd269b3e0.js.map"
     ],
     "component---src-pages-404-js": [
-      "component---src-pages-404-js-bafe40c35a3beb6802f0.js",
-      "component---src-pages-404-js-bafe40c35a3beb6802f0.js.map"
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
+    ],
+    "path---bar-sal-de-caramelo": [
+      "path---bar-sal-de-caramelo-f73979865ea275635586.js",
+      "path---bar-sal-de-caramelo-f73979865ea275635586.js.map"
     ],
     "commons": [
-      "commons-a296c8d5e9229086285e.js",
+      "commons-a6e7e4321be60cc5a303.js",
       "build-js-styles.css",
-      "commons-a296c8d5e9229086285e.js.map",
+      "commons-a6e7e4321be60cc5a303.js.map",
       "build-js-styles.css.map"
     ],
     "path---404-html": [
       "path---404-html-1db04e5021b40904aca6.js",
       "path---404-html-1db04e5021b40904aca6.js.map"
     ],
+    "component---src-templates-bar-index-js": [
+      "component---src-templates-bar-index-js-c9333614cc640850a61f.js",
+      "component---src-templates-bar-index-js-c9333614cc640850a61f.js.map"
+    ],
     "app": [
-      "app-2844e47fcf66cdfc1a25.js",
+      "app-0a048fd91c3ba961aac7.js",
       "build-js-styles.css",
-      "app-2844e47fcf66cdfc1a25.js.map",
+      "app-0a048fd91c3ba961aac7.js.map",
       "build-js-styles.css.map"
     ],
     "path---404": [
       "path---404-1db04e5021b40904aca6.js",
       "path---404-1db04e5021b40904aca6.js.map"
+    ],
+    "component---src-templates-bar-single-js": [
+      "component---src-templates-bar-single-js-50c9c0ff1741025b9fe6.js",
+      "component---src-templates-bar-single-js-50c9c0ff1741025b9fe6.js.map"
     ]
   }
 }
