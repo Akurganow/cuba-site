@@ -1,44 +1,44 @@
 {
   "assetsByChunkName": {
     "path---events-17-12-31-new-year": [
-      "path---events-17-12-31-new-year-3c3476c6dbf1c708343d.js",
-      "path---events-17-12-31-new-year-3c3476c6dbf1c708343d.js.map"
+      "path---events-17-12-31-new-year-decd8c4ac38182ee1575.js",
+      "path---events-17-12-31-new-year-decd8c4ac38182ee1575.js.map"
     ],
     "path---kitchen": [
-      "path---kitchen-d272099ba5376c7e807f.js",
-      "path---kitchen-d272099ba5376c7e807f.js.map"
+      "path---kitchen-6d175990c2c6c2c79ac1.js",
+      "path---kitchen-6d175990c2c6c2c79ac1.js.map"
     ],
     "path---events": [
-      "path---events-38f83af2a90856b89381.js",
-      "path---events-38f83af2a90856b89381.js.map"
+      "path---events-1807bcaaf0ecb15967b4.js",
+      "path---events-1807bcaaf0ecb15967b4.js.map"
     ],
     "path---kitchen-squid-and-onion-rings": [
-      "path---kitchen-squid-and-onion-rings-900803b8ab34d004fb1a.js",
-      "path---kitchen-squid-and-onion-rings-900803b8ab34d004fb1a.js.map"
+      "path---kitchen-squid-and-onion-rings-f8c65ea6a7bafecf3cd0.js",
+      "path---kitchen-squid-and-onion-rings-f8c65ea6a7bafecf3cd0.js.map"
     ],
     "path---contacts": [
-      "path---contacts-1db04e5021b40904aca6.js",
-      "path---contacts-1db04e5021b40904aca6.js.map"
+      "path---contacts-a0e39f21c11f6a62c5ab.js",
+      "path---contacts-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
       "path----557518bd178906f8d58a.js.map"
     ],
     "path---events-18-02-14-st-valentines-day": [
-      "path---events-18-02-14-st-valentines-day-32f1f6646c4809b3be9e.js",
-      "path---events-18-02-14-st-valentines-day-32f1f6646c4809b3be9e.js.map"
+      "path---events-18-02-14-st-valentines-day-5b489551c347df1e5a29.js",
+      "path---events-18-02-14-st-valentines-day-5b489551c347df1e5a29.js.map"
     ],
     "component---src-templates-events-index-js": [
       "component---src-templates-events-index-js-56185e91f448a1c4d506.js",
       "component---src-templates-events-index-js-56185e91f448a1c4d506.js.map"
     ],
     "component---src-templates-index-js": [
-      "component---src-templates-index-js-f61483d158ba1111bd31.js",
-      "component---src-templates-index-js-f61483d158ba1111bd31.js.map"
+      "component---src-templates-index-js-0c430db12d107844b00e.js",
+      "component---src-templates-index-js-0c430db12d107844b00e.js.map"
     ],
     "path---kitchen-burger": [
-      "path---kitchen-burger-b3e82d86221353895b50.js",
-      "path---kitchen-burger-b3e82d86221353895b50.js.map"
+      "path---kitchen-burger-c5ca45acf844b232b7f4.js",
+      "path---kitchen-burger-c5ca45acf844b232b7f4.js.map"
     ],
     "component---src-layouts-index-js": [
       "component---src-layouts-index-js-c3b95fddbcf73e9b75f0.js",
@@ -53,16 +53,16 @@
       "component---src-templates-events-single-js-54b4e2fc9fef692f4a49.js.map"
     ],
     "component---src-pages-contacts-js": [
-      "component---src-pages-contacts-js-44e6a940987185b8a62a.js",
-      "component---src-pages-contacts-js-44e6a940987185b8a62a.js.map"
+      "component---src-pages-contacts-js-dec7906eb52e6d619ddc.js",
+      "component---src-pages-contacts-js-dec7906eb52e6d619ddc.js.map"
     ],
     "path---index": [
-      "path---index-8453e67cf5038525b7d2.js",
-      "path---index-8453e67cf5038525b7d2.js.map"
+      "path---index-cc5065a7c136bd14d1db.js",
+      "path---index-cc5065a7c136bd14d1db.js.map"
     ],
     "path---bar": [
-      "path---bar-de9b8a72e3047d5bf4ae.js",
-      "path---bar-de9b8a72e3047d5bf4ae.js.map"
+      "path---bar-d16550516d3acb6f74ad.js",
+      "path---bar-d16550516d3acb6f74ad.js.map"
     ],
     "component---src-templates-kitchen-index-js": [
       "component---src-templates-kitchen-index-js-ac5f0e05ec8cd269b3e0.js",
@@ -73,32 +73,32 @@
       "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
     ],
     "path---bar-sal-de-caramelo": [
-      "path---bar-sal-de-caramelo-f73979865ea275635586.js",
-      "path---bar-sal-de-caramelo-f73979865ea275635586.js.map"
+      "path---bar-sal-de-caramelo-66099579acc961eb05cf.js",
+      "path---bar-sal-de-caramelo-66099579acc961eb05cf.js.map"
     ],
     "commons": [
-      "commons-a6e7e4321be60cc5a303.js",
+      "commons-a5142a1b86fe010eb5ce.js",
       "build-js-styles.css",
-      "commons-a6e7e4321be60cc5a303.js.map",
+      "commons-a5142a1b86fe010eb5ce.js.map",
       "build-js-styles.css.map"
     ],
     "path---404-html": [
-      "path---404-html-1db04e5021b40904aca6.js",
-      "path---404-html-1db04e5021b40904aca6.js.map"
+      "path---404-html-a0e39f21c11f6a62c5ab.js",
+      "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-templates-bar-index-js": [
       "component---src-templates-bar-index-js-c9333614cc640850a61f.js",
       "component---src-templates-bar-index-js-c9333614cc640850a61f.js.map"
     ],
     "app": [
-      "app-0a048fd91c3ba961aac7.js",
+      "app-704c1e4c15fd6fbbbe0e.js",
       "build-js-styles.css",
-      "app-0a048fd91c3ba961aac7.js.map",
+      "app-704c1e4c15fd6fbbbe0e.js.map",
       "build-js-styles.css.map"
     ],
     "path---404": [
-      "path---404-1db04e5021b40904aca6.js",
-      "path---404-1db04e5021b40904aca6.js.map"
+      "path---404-a0e39f21c11f6a62c5ab.js",
+      "path---404-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-templates-bar-single-js": [
       "component---src-templates-bar-single-js-50c9c0ff1741025b9fe6.js",
