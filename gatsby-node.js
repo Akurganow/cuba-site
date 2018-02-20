@@ -55,21 +55,22 @@ exports.createPages = async ({ graphql, boundActionCreators }) => {
 
   let { events, kitchen, bar, slider, gallery } = result.data
 
-  events = combineNodes(events.edges).map(createPost.bind(null, true))
-  kitchen = combineNodes(kitchen.edges).map(createPost.bind(null, false))
-  bar = combineNodes(bar.edges).map(createPost.bind(null, false))
-  gallery = gallery.edges
-  slider = combineNodes(slider.edges)
+
+  const eventsNodes = combineNodes(events.edges).map(createPost.bind(null, true))
+  const kitchenNodes = combineNodes(kitchen.edges).map(createPost.bind(null, false))
+  const barNodes = combineNodes(bar.edges).map(createPost.bind(null, false))
+  const galleryNodes = gallery.edges
+  const sliderNodes = combineNodes(slider.edges)
 
   function filterIndexItem(item) {
     return (item.ru.image && item.ru.image.file) && (item.en.image && item.en.image.file)
   }
 
   const indexData = {
-    kitchen: kitchen.filter(filterIndexItem).slice(0, 4),
-    bar: bar.filter(filterIndexItem).slice(0, 4),
-    slider,
-    gallery: gallery.filter(item => item.node.title === 'На главную' || item.node.title === 'Афиша на главной'),
+    kitchen: kitchenNodes.filter(filterIndexItem).slice(0, 4),
+    bar: barNodes.filter(filterIndexItem).slice(0, 4),
+    slider: sliderNodes,
+    gallery: galleryNodes.filter(item => item.node.title === 'На главную' || item.node.title === 'Афиша на главной'),
   }
 
   createPage({
@@ -82,19 +83,19 @@ exports.createPages = async ({ graphql, boundActionCreators }) => {
     rootPath: '/events',
     pageTemplate: eventsPage,
     postTemplate: eventsPost,
-    items: events,
+    items: eventsNodes,
   })
   createPages({
     rootPath: '/kitchen',
     pageTemplate: kitchenPage,
     postTemplate: kitchenPost,
-    items: kitchen,
+    items: kitchenNodes,
   })
   createPages({
     rootPath: '/bar',
     pageTemplate: barPage,
     postTemplate: barPost,
-    items: bar,
+    items: barNodes,
   })
   // createPages({
   //   rootPath: '/gallery',
