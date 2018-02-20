@@ -17,10 +17,10 @@ const Actions = (props) => {
       subtitle={t({ru: 'Санкт-Петербург, Гороховая, 28', en: 'Saint Petersburg, Gorohovaya, 28'})} />
     <Iconed
       className={st.action}
-      link='tel:+79754565585'
+      link='tel:+78123103311'
       icon='call'
       title={t({ru: 'Телефон', en: 'Phone'})}
-      subtitle='+7 (123) 456-78-90' />
+      subtitle='+7 (812) 310-33-11' />
     <Iconed
       className={st.action}
       icon='clock'

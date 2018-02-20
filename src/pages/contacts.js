@@ -40,8 +40,8 @@ class ContactsPage extends Component {
               </li>
               <li>
                 <strong>{t({ ru: 'Телефон:', en: 'Phone:' })}</strong>{' '}
-                <a href='tel:+1234567890'>
-                  +7 (123) 456-78-90
+                <a href='tel:+78123103311'>
+                  +7 (812) 310-33-11
                 </a>
               </li>
               <li>
